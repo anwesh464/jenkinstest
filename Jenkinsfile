@@ -3,7 +3,7 @@ node {
     checkout scm
   }
   stage('Build') {
-      echo 'Building....'
+    echo 'Building....${env.BUILD_ID}'
   }
   stage('Test') {
       echo 'Testing....'
