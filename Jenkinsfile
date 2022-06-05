@@ -3,7 +3,7 @@ node {
     checkout scm
   }
   stage('Build') {
-    echo 'Building....${env.BUILD_ID}'
+    echo "Building ${env.BUILD_ID} on ${env.JENKINS_URL}"
   }
   stage('Test') {
       echo 'Testing....'
